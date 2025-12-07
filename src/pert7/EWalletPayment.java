@@ -12,9 +12,9 @@ public class EWalletPayment implements PaymentMethod {
 
     // TODO: Buat constructor untuk mengisi nilai atribut
     public EWalletPayment(String penydeiaLayanan, double saldo, double nominalTransaksi) {
-        this.penydeiaLayanan = penydeiaLayanan;
-        this.saldo = saldo;
-        this.nominalTransaksi = nominalTransaksi;
+        this.penydeiaLayanan=penydeiaLayanan;
+        this.saldo=saldo;
+        this.nominalTransaksi=nominalTransaksi;
     }
 
     // TODO: Implementasikan semua method yang ada pada interface PaymentMethod
@@ -25,10 +25,10 @@ public class EWalletPayment implements PaymentMethod {
     // - Jika saldo tidak cukup, tampilkan pesan gagal
     @Override
     public String processPayment() {
-        if (saldo >= nominalTransaksi) {
-            saldo = saldo - nominalTransaksi;
+        if (saldo>=nominalTransaksi) {
+            saldo=saldo-nominalTransaksi;
             return "Pembayaran berhasil!";
-        } else {
+        }else{
             return "Pembayaran gagal! Saldo tidak cukup.";
         }
     }

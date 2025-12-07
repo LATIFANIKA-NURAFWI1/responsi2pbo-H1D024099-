@@ -44,8 +44,8 @@ public abstract class KendaraanGalaksi {
     }
     protected void ubahEnergi(int jumlah) {
         this.levelEnergi += jumlah;
-        if (this.levelEnergi > 100) this.levelEnergi = 100;
-        if (this.levelEnergi < 0) this.levelEnergi = 0;
+        if (this.levelEnergi>100) this.levelEnergi=100;
+        if (this.levelEnergi<0) this.levelEnergi=0;
     }
 
     public  int getKapasitasPenumpang(){

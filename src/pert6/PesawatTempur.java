@@ -35,9 +35,9 @@ public class PesawatTempur extends KendaraanGalaksi {
     @Override
     void aktifkanMesin() {
         if (getLevelEnergi() < 20) {
-            System.out.println("Energi terlalu rendah! Mesin tidak dapat diaktifkan.");
+            System.out.println("Energi terlalu rendah! Mesin tidak dapat diaktifkan");
         } else {
-            System.out.println("Mesin pesawat tempur diaktifkan.");
+            System.out.println("Mesin pesawat tempur diaktifkan");
         }
     }
 
@@ -51,9 +51,9 @@ public class PesawatTempur extends KendaraanGalaksi {
         int energiDibutuhkan = jarak * 3;
         if (getLevelEnergi() >= energiDibutuhkan) {
             ubahEnergi(-energiDibutuhkan);
-            System.out.println("Pesawat tempur menjelajah sejauh " + jarak + " km.");
+            System.out.println("Pesawat tempur menjelajah sejauh " + jarak + " km");
         } else {
-            System.out.println("Energi tidak mencukupi untuk menjelajah sejauh " + jarak + " km.");
+            System.out.println("Energi tidak mencukupi untuk menjelajah sejauh " + jarak + " km");
         }
     }
 
@@ -63,7 +63,7 @@ public class PesawatTempur extends KendaraanGalaksi {
     @Override
     void isiEnergi(int jumlah) {
         ubahEnergi(jumlah);
-        System.out.println("Energi pesawat diisi sebesar " + jumlah + "%.");
+        System.out.println("Energi pesawat diisi sebesar " + jumlah + "%");
     }
 
     // ==========================================================

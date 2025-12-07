@@ -10,7 +10,7 @@ class UjiPengguna {
 
         p.tampilInfo();
 
-        //p.faktorAktivitas = 1.5;
+        //p.faktorAktivitas = 1.5; //INI UNTUK OUTPUT YANG ERROR KARENA KONSTANTA FINAL TIDAK BISA DIUBAH
 
         System.out.println("\n--- Demonstrasi Konstanta Final ---");
         System.out.println("Nilai faktor aktivitas: " + p.faktorAktivitas);

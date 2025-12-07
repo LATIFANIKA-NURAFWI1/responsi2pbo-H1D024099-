@@ -18,7 +18,7 @@ class UjiKaryawan {
         Manajer m1=new Manajer("Siti Aminah", 6000000, 2500000);
 
         // Tampilkan info pert3.Manajer
-        System.out.println("Status: pert3.Manajer");
+        System.out.println("Status: Manajer");
         m1.tampilInfo();
 
     }

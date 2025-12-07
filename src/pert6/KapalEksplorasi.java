@@ -51,9 +51,9 @@ public class KapalEksplorasi extends KendaraanGalaksi {
 
         if (getLevelEnergi() >= energiDibutuhkan) {
             ubahEnergi(-energiDibutuhkan);
-            System.out.println("Kapal eksplorasi menjelajah sejauh " + jarak + " km.");
+            System.out.println("Kapal eksplorasi menjelajah sejauh " + jarak + " km");
         } else {
-            System.out.println("Energi tidak mencukupi untuk menjelajah sejauh " + jarak + " km.");
+            System.out.println("Energi tidak mencukupi untuk menjelajah sejauh " + jarak + " km");
         }
     }
 
@@ -63,7 +63,7 @@ public class KapalEksplorasi extends KendaraanGalaksi {
     @Override
     void isiEnergi(int jumlah) {
         ubahEnergi(jumlah);
-        System.out.println("Energi kapal diisi ulang.");
+        System.out.println("Energi kapal diisi ulang");
     }
 
     // ==========================================================
@@ -75,7 +75,7 @@ public class KapalEksplorasi extends KendaraanGalaksi {
     // Tampilkan:
     // "Melakukan scan pada planet [namaPlanet] dengan modul level [modulScan]."
     void scanPlanet(String namaPlanet) {
-        System.out.println("Melakukan scan pada planet " + namaPlanet + " dengan modul level " + modulScan + ".");
+        System.out.println("Melakukan scan pada planet " + namaPlanet + " dengan modul level " + modulScan);
     }
 }
 

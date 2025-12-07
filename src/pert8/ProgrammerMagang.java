@@ -49,9 +49,9 @@ public class ProgrammerMagang implements KaryawanKontrak, AksesSistem {
     @Override
     public void perpanjangKontrak(int durasiBulan) {
         if (sedangLogin) {
-            System.out.println("Kontrak diperpanjang " + durasiBulan + " bulan.");
+            System.out.println("Kontrak diperpanjang " + durasiBulan + " bulan");
         } else {
-            System.out.println("Harap login terlebih dahulu untuk memperbarui kontrak.");
+            System.out.println("Harap login terlebih dahulu untuk memperbarui kontrak");
         }
     }
 
@@ -76,7 +76,7 @@ public class ProgrammerMagang implements KaryawanKontrak, AksesSistem {
             sedangLogin = true;
             System.out.println("Login Berhasil. Selamat datang, " + nama + "!");
         } else {
-            System.out.println("Login Gagal: PIN salah.");
+            System.out.println("Login Gagal: PIN salah");
         }
     }
 
@@ -85,7 +85,7 @@ public class ProgrammerMagang implements KaryawanKontrak, AksesSistem {
     @Override
     public void logout() {
         sedangLogin = false;
-        System.out.println(nama + " berhasil logout.");
+        System.out.println(nama + " berhasil logout");
     }
 
     // @Override: IMPLEMENTASIKAN getRoleAkses() (Override Default Method)

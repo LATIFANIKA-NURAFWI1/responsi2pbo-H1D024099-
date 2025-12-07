@@ -38,8 +38,7 @@ public class ProgrammerMagang implements KaryawanKontrak, AksesSistem {
     // LOGIKA: Hitung gaji (jamKerja * gajiPerJam) dan tampilkan hasilnya.
     @Override
     public double hitungGaji(int jamKerja) {
-        double totalGaji = jamKerja * gajiPerJam;
-        // Tampilkan hasil sesuai format soal
+        double totalGaji=jamKerja*gajiPerJam;
         System.out.println("Gaji " + nama + " (" + jamKerja + " jam) adalah: Rp " + totalGaji);
         return totalGaji;
     }
@@ -50,7 +49,7 @@ public class ProgrammerMagang implements KaryawanKontrak, AksesSistem {
     public void perpanjangKontrak(int durasiBulan) {
         if (sedangLogin) {
             System.out.println("Kontrak diperpanjang " + durasiBulan + " bulan");
-        } else {
+        }else{
             System.out.println("Harap login terlebih dahulu untuk memperbarui kontrak");
         }
     }
@@ -73,9 +72,9 @@ public class ProgrammerMagang implements KaryawanKontrak, AksesSistem {
     @Override
     public void login(String pin) {
         if (pin.equals(pinRahasia)) {
-            sedangLogin = true;
+            sedangLogin=true;
             System.out.println("Login Berhasil. Selamat datang, " + nama + "!");
-        } else {
+        }else{
             System.out.println("Login Gagal: PIN salah");
         }
     }
@@ -84,7 +83,7 @@ public class ProgrammerMagang implements KaryawanKontrak, AksesSistem {
     // LOGIKA: Ubah sedangLogin = false dan tampilkan pesan logout.
     @Override
     public void logout() {
-        sedangLogin = false;
+        sedangLogin=false;
         System.out.println(nama + " berhasil logout");
     }
 

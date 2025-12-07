@@ -24,10 +24,10 @@ public class ProgrammerMagang implements KaryawanKontrak, AksesSistem {
     // Buat satu constructor yang menerima 3 parameter (nama, gajiPerJam, pinRahasia).
     // Inisialisasi atribut sedangLogin dengan nilai default 'false'.
     public ProgrammerMagang(String nama, double gajiPerJam, String pinRahasia) {
-        this.nama = nama;
-        this.gajiPerJam = gajiPerJam;
-        this.pinRahasia = pinRahasia;
-        this.sedangLogin = false; // Default belum login
+        this.nama=nama;
+        this.gajiPerJam=gajiPerJam;
+        this.pinRahasia=pinRahasia;
+        this.sedangLogin=false; 
     }
 
     // ==========================================================

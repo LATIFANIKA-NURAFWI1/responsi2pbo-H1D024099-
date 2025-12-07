@@ -1,0 +1,16 @@
+Pertanyaan Refleksi
+Setelah menyelesaikan kode, jawab pertanyaan berikut:
+
+1. Apa perbedaan antara interface dengan class biasa?
+2. Mengapa interface tidak memiliki implementasi method di dalamnya?
+3. Apa tujuan penggunaan keyword "implements" pada sebuah class?
+4. Apakah sebuah class dapat mengimplementasikan lebih dari satu interface? Jelaskan dan berikan contoh sederhana.
+5. Jika sebuah class mengimplementasikan interface, apa yang terjadi jika class tersebut tidak mengimplementasikan semua method dari interface tersebut?
+
+Jawaban:
+1. Interface: hanya berisi deklarasi method (abstract method) dan konstanta (final static). Tidak memiliki implementasi. Tidak bisa dibuat objeknya (instansiasi) secara langsung.
+    Class biasa: berisi deklarasi variabel, method, dan implementasi detail dari method tersebut. Bisa dibuat objeknya secara langsung menggunakan new
+2. karena tujuan utama interface adalah untuk mendefinisikan kontrak perilaku (behavior)bukan menjalankan logika
+3. Keyword implements digunakan oleh sebuah class untuk menunjukkan bahwa class tersebut akan mengimplementasikan (memberikan kode untuk) semua method yang dideklarasikan di interface
+4. Ya, sebuah class dapat mengimplementasikan lebih dari satu interface. Contoh: public class SmartPhone implements Kamera, Telepon { ... } Artinya, class SmartPhone harus bisa melakukan fungsi Kamera (foto) dan fungsi Telepon (panggil).
+5. Error, kecuali class tersebut dijadikan abstract

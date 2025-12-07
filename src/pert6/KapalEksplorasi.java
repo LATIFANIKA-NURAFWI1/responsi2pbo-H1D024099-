@@ -33,7 +33,6 @@ public class KapalEksplorasi extends KendaraanGalaksi {
     // Jika cukup → "Kapal eksplorasi siap berangkat!"
     @Override
     void aktifkanMesin() {
-        // Tidak boleh jalan jika energi < 15% [cite: 69]
         if (getLevelEnergi() < 15) {
             System.out.println("Energi tidak mencukupi untuk memulai ekspedisi!");
         } else {
@@ -46,7 +45,6 @@ public class KapalEksplorasi extends KendaraanGalaksi {
     // Jika cukup → kurangi energi & tampilkan jarak perjalanan.
     @Override
     void jelajah(int jarak) {
-        // Konsumsi energi: 2% per 1 km (lebih efisien) [cite: 69]
         int energiDibutuhkan = jarak * 2;
 
         if (getLevelEnergi() >= energiDibutuhkan) {

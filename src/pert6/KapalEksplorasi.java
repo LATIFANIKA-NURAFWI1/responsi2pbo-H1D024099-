@@ -21,7 +21,7 @@ public class KapalEksplorasi extends KendaraanGalaksi {
     //   - modulScan
     public KapalEksplorasi(String namaKendaraan, int kapasitasPenumpang, int modulScan) {
         super(namaKendaraan, kapasitasPenumpang);
-        this.modulScan = modulScan;
+        this.modulScan=modulScan;
     }
 
     // ==========================================================
@@ -33,6 +33,7 @@ public class KapalEksplorasi extends KendaraanGalaksi {
     // Jika cukup → "Kapal eksplorasi siap berangkat!"
     @Override
     void aktifkanMesin() {
+        // Tidak boleh jalan jika energi < 15% [cite: 69]
         if (getLevelEnergi() < 15) {
             System.out.println("Energi tidak mencukupi untuk memulai ekspedisi!");
         } else {
@@ -45,9 +46,9 @@ public class KapalEksplorasi extends KendaraanGalaksi {
     // Jika cukup → kurangi energi & tampilkan jarak perjalanan.
     @Override
     void jelajah(int jarak) {
-        int energiDibutuhkan = jarak * 2;
+        int energiDibutuhkan=jarak*2;
 
-        if (getLevelEnergi() >= energiDibutuhkan) {
+        if (getLevelEnergi()>=energiDibutuhkan) {
             ubahEnergi(-energiDibutuhkan);
             System.out.println("Kapal eksplorasi menjelajah sejauh " + jarak + " km");
         } else {

@@ -15,6 +15,7 @@ public class UjiGalaksi {
         //   jumlahRudal: 8
         System.out.println("--- PESAWAT TEMPUR ---");
         PesawatTempur pTempur = new PesawatTempur("Astra-Fury", 2, 8);
+        
         // TODO:
         // Aktifkan mesin pesawat
         // Pesawat menjelajah 10 km
@@ -36,13 +37,9 @@ public class UjiGalaksi {
         System.out.println("--- KAPAL EKSPLORASI ---");
         KapalEksplorasi kEksplorasi = new KapalEksplorasi("Voyager X", 10, 4);
 
-
         // ==========================================================
         // PENGUJIAN PERILAKU
         // ==========================================================
-
-
-
 
         // TODO:
         // Aktifkan mesin kapal eksplorasi
